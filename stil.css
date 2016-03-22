@@ -1,0 +1,181 @@
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+body {
+	background-image: url("Slike/pozadina.jpg");
+	margin:0;
+}
+#zaglavlje {
+	background-color:black;
+	height:10vw;
+	color:green;
+	font-family:Gabriela;
+	text-align:center;
+	opacity: 0.8;
+}
+#zaglavlje h1{
+	font-size: 4.5vw;
+	margin:0;
+	color: white;
+	padding:1%;
+	float: left;
+	padding: 3%;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+#meni {
+	clear:both;
+	background-color: white ;
+	opacity: 0.9;
+	padding:0.5%;
+	height:1.5vw;
+	font-size:1.3vw;
+}
+
+#meni>ul {
+	padding:0px;
+	margin:0px;
+	text-align:center;
+}
+#meni>ul>li {
+	list-style-type:none;
+	display:inline;
+	margin-right: 3vw;
+}
+
+.GlavniDioCoveri {
+	margin-top: 3%;
+	margin-left: 3%;
+	margin-right: 3%;
+	display: inline-block;
+}
+
+#podnozje {
+	background-color: #cc9;
+	color:black;
+	height:1.5vw;
+	padding-left:3%;
+	clear: both;
+	position: relative;
+	bottom:0;
+}
+
+#logo {
+	height: 6vw;
+	position:absolute;
+	width: 6vw;
+	border-radius: 10%;
+	transform: rotate(45deg);
+	background: #e6e6e6;
+	margin:2%;
+	float:right;
+}
+
+#kruzic {
+	position: absolute;
+	height: 24%;
+	width: 21%;
+	background: #4d4d4d;
+	top: 59%;
+	left: 52%;
+	border-radius: 50%;
+}
+
+#linija {
+	position:absolute;
+	border-radius: 50%/100px 100px 0 0;
+	top:7%;
+	left:40%;
+	width:6%;
+	height: 66%;
+	transform: rotate(-45deg);
+	background-color: #4d4d4d;
+
+}
+#logo:hover{
+	border-radius: 50%;
+	border:solid 0.4vw #cccccc;
+}
+
+.Pjesma {
+	height:30%;
+	width:30%;
+	padding:3%;
+	display: inline;
+}
+.Pjesma a {
+	position: relative;
+	display: inline-block;
+	text-align:center;
+	font-size:1.3vw;
+	padding:0.5vw;
+	height: auto;
+	width:auto;
+}
+
+.Pjesma a span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -1em;
+	margin-left: -50%;
+	width: 100%;
+	height: 2em;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	}
+
+.Pjesma img {
+		width: 12vw;
+		height: auto;
+		background-repeat: no-repeat;
+		background-size: contain;
+		border: 0.5vw double white;
+	}
+
+.omeni {
+		color:white;
+		font-size: 1.5vw;
+		text-align: left;
+	}
+.omeni p {
+		float: left;
+		padding-top: 2%;
+		padding-left: 2%;
+		width: 45%;
+	}
+.omeni img {
+		float: right;
+		width: 30%;
+		margin-top: 3%;
+		margin-right: 15%;
+		height: auto;;
+		background-repeat: no-repeat;
+		background-size: contain;
+		border: 0.3vw groove red;
+	}
+
+	.GlavniDioNovosti {
+		width:30%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 5%;
+		display: inline;
+	}
+
+	.GlavniDioNovosti #Novost
+	{
+		position: relative;
+		display: inline-block;
+		text-align:center;
+		font-size:2vw;
+		color: red;
+		padding:0.3vw;
+		height: auto;
+		width:30%;
+		background-color:#E8e8e8;
+		opacity: 0.8;
+		border: 0.3vw double red;
+		margin: 0.5vw;
+		overflow: hidden;
+	}
