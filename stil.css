@@ -2,6 +2,9 @@
 body {
 	background-image: url("Slike/pozadina.jpg");
 	margin:0;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 #zaglavlje {
 	background-color:black;
@@ -15,11 +18,10 @@ body {
 	font-size: 4.5vw;
 	margin:0;
 	color: white;
-	padding:1%;
 	float: left;
 	padding: 3%;
 	position: absolute;
-	width: 100%;
+	width: 94%;
 	text-align: center;
 }
 
@@ -75,7 +77,7 @@ body {
 	position: absolute;
 	height: 24%;
 	width: 21%;
-	background: #4d4d4d;
+	background: black;
 	top: 59%;
 	left: 52%;
 	border-radius: 50%;
@@ -89,7 +91,7 @@ body {
 	width:6%;
 	height: 66%;
 	transform: rotate(-45deg);
-	background-color: #4d4d4d;
+	background-color: black;
 
 }
 #logo:hover{
@@ -100,7 +102,8 @@ body {
 .Pjesma {
 	height:30%;
 	width:30%;
-	padding:3%;
+	margin-left: auto;
+	margin-right: auto;
 	display: inline;
 }
 .Pjesma a {
@@ -123,59 +126,178 @@ body {
 	height: 2em;
 	color: white;
 	background-color: rgba(0,0,0,0.5);
-	}
+}
 
 .Pjesma img {
-		width: 12vw;
-		height: auto;
-		background-repeat: no-repeat;
-		background-size: contain;
-		border: 0.5vw double white;
-	}
+	width: 15.5vw;
+	height: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 0.5vw double white;
+}
 
 .omeni {
-		color:white;
-		font-size: 1.5vw;
-		text-align: left;
-	}
+	color:white;
+	font-size: 1.5vw;
+	text-align: left;
+}
 .omeni p {
-		float: left;
-		padding-top: 2%;
-		padding-left: 2%;
-		width: 45%;
-	}
+	float: left;
+	padding-top: 2%;
+	padding-left: 2%;
+	width: 45%;
+}
 .omeni img {
-		float: right;
-		width: 30%;
-		margin-top: 3%;
-		margin-right: 15%;
-		height: auto;;
-		background-repeat: no-repeat;
-		background-size: contain;
-		border: 0.3vw groove red;
-	}
+	float: right;
+	width: 30%;
+	margin-top: 3%;
+	margin-right: 15%;
+	height: auto;;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 0.3vw groove red;
+}
 
-	.GlavniDioNovosti {
-		width:30%;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 5%;
-		display: inline;
-	}
+.GlavniDioNovosti {
+	margin-top: 7vw;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-	.GlavniDioNovosti #Novost
-	{
-		position: relative;
-		display: inline-block;
-		text-align:center;
-		font-size:2vw;
-		color: red;
-		padding:0.3vw;
-		height: auto;
-		width:30%;
-		background-color:#E8e8e8;
-		opacity: 0.8;
-		border: 0.3vw double red;
-		margin: 0.5vw;
-		overflow: hidden;
-	}
+.GlavniDioNovosti .Novost
+{
+	position: relative;
+	display: inline-block;
+	text-align:center;
+	font-size:1.7vw;
+	color: red;
+	padding:0.3vw;
+	height: 10vw;
+	width:25%;
+	background-color:#E8e8e8;
+	opacity: 0.8;
+	border: 0.3vw double red;
+	margin: 0.5vw;
+	overflow: hidden;
+	background-size: contain;
+}
+
+.GlavniDioNovosti .Novost p
+{
+	text-align: center;
+	position: relative;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5%;
+	border:2vw;
+	font-size: 30px;
+	text-align: center;
+	height: 25em;
+	width: 40em;
+	opacity: 0.75;
+}
+
+table.center {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+tr {
+	color: white;
+	background-color: #4A0E0E;
+	text-align: center;
+}
+
+tr:hover {
+	background-color: black;
+}
+
+.paran {
+	background-color: #851818;
+}
+
+.prvi {
+	background-color: #188585;
+}
+
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+
+input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+
+#kontakt {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+	border-radius: 4vw;
+	background-color: #f2f2f2;
+	padding: 3%;
+	width: 30%;
+	opacity: 0.95;
+	font-weight: bold;
+	background-color:white;
+	font-size: 1.1vw;
+}
+
+h2  {
+	clear: both;
+	color: white;
+	font: Serif;
+	text-align: center;
+	font-style: italic;
+	font-size: 2vw;
+}
+
+#dugme {
+	color: white;
+	background-color: #575757;
+}
+
+#mail {
+	padding: 1%;
+}
+
+.drustvenemreze {
+	padding: 9vw;
+	list-style:none;
+	float: left;
+}
+
+.drustvenemreze a
+{
+	text-decoration: none;
+	font-size: 3vw;
+	color: white;
+}
+
+.drustvenemreze li:hover {
+	color:#B8B8B8;
+	list-style-image: url("Slike/strelica.png") ;
+	color:#B8B8B8;
+}
