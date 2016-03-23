@@ -290,13 +290,13 @@ input[type=text], select {
 }
 
 
-input[type=dugme] {
+input[type=submit] {
 	background-color: #4CAF50;
 	color: white;
 	padding: 0.7vw;
 	border: 0.2vw double grey;
 	width: 8vw;
-	height: 1vw;
+	height: 3vw;
 	border-radius: 0.3vw;
 	cursor: pointer;
 	margin-top: 2vw;
@@ -307,7 +307,7 @@ input[type=dugme] {
 	text-align: center;
 }
 
-input[type=dugme]:hover {
+input[type=submit]:hover {
 	background-color: #45a049;
 }
 
