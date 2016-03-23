@@ -45,6 +45,22 @@ body {
 	margin-right: 3vw;
 }
 
+#meni a:visited {
+    text-decoration: none;
+		color: red;
+}
+
+#meni a:hover {
+    color: #FF8080;
+		text-decoration: none;
+}
+
+#meni a:active {
+    text-decoration: none;
+    outline: 0.3px solid red;
+		color: #8C0000;
+}
+
 .GlavniDioCoveri {
 	margin-top: 3%;
 	margin-left: 3%;
@@ -118,14 +134,14 @@ body {
 
 .Pjesma a span {
 	position: absolute;
+	background-color: rgba(0,0,0,0.5);
 	top: 50%;
 	left: 50%;
-	margin-top: -1em;
+	margin-top: -1vw;
 	margin-left: -50%;
 	width: 100%;
-	height: 2em;
+	height: 3.3vw;
 	color: white;
-	background-color: rgba(0,0,0,0.5);
 }
 
 .Pjesma img {
@@ -134,6 +150,10 @@ body {
 	background-repeat: no-repeat;
 	background-size: contain;
 	border: 0.5vw double white;
+}
+
+.Pjesma img:hover {
+	opacity:0.7;
 }
 
 .omeni {
@@ -158,6 +178,22 @@ body {
 	border: 0.3vw groove red;
 }
 
+.omeni a:visited {
+    text-decoration: none;
+		color: red;
+}
+
+.omeni a:hover {
+    color: #FF8080;
+		text-decoration: none;
+}
+
+.omeni a:active {
+    text-decoration: none;
+    outline: 0.3px solid red;
+		color: #8C0000;
+}
+
 .GlavniDioNovosti {
 	margin-top: 7vw;
 	width: 80%;
@@ -167,14 +203,15 @@ body {
 
 .GlavniDioNovosti .Novost
 {
+	clear: both;
 	position: relative;
 	display: inline-block;
 	text-align:center;
 	font-size:1.7vw;
 	color: red;
 	padding:0.3vw;
-	height: 10vw;
-	width:25%;
+	height: 14vw;
+	width:45%;
 	background-color:#E8e8e8;
 	opacity: 0.8;
 	border: 0.3vw double red;
@@ -185,8 +222,26 @@ body {
 
 .GlavniDioNovosti .Novost p
 {
+	padding: 1%;
 	text-align: center;
 	position: relative;
+	float: left;
+	vertical-align: middle;
+	width: 49%;
+	justify-content:center;
+	align-content:center;
+}
+
+.Novost img
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: 49%;
+	float: right;
+}
+
+.Novost:hover {
+	opacity:0.7;
 }
 
 table {
@@ -226,11 +281,11 @@ tr:hover {
 
 input[type=text], select {
 	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
+	padding: 1vw 1.5vw;
+	margin: 1vw 0;
 	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
+	border: 0.3vw solid #ccc;
+	border-radius: 0.3vw;
 	box-sizing: border-box;
 }
 
@@ -242,9 +297,13 @@ input[type=dugme] {
 	border: 0.2vw double grey;
 	width: 8vw;
 	height: 1vw;
-	border-radius: 4px;
+	border-radius: 0.3vw;
 	cursor: pointer;
 	margin-top: 2vw;
+	margin-left: auto;
+	font-size: 1vw;
+	margin-right: auto;
+	display:block;
 	text-align: center;
 }
 
@@ -252,19 +311,28 @@ input[type=dugme]:hover {
 	background-color: #45a049;
 }
 
-input[type=email], input[type=text], textarea
+input[type=email], input[type=text]
 {
 	display:flex;
 	box-sizing: border-box;
 	width:30vw;
 	border: 0.2vw solid silver;
-	border-radius: 6px;
+	border-radius: 0.4vw;;
 	font-family: serif;
+	height: 2vw;
 }
 
 textarea {
-		height: 8vw;
-    }
+	display:flex;
+	box-sizing: border-box;
+	width:30vw;
+	border: 0.2vw solid silver;
+	border-radius: 0.4vw;;
+	font-family: serif;
+	overflow: hidden;
+	resize: none;
+	height: 8vw;
+}
 
 
 #kontakt {
@@ -281,13 +349,15 @@ textarea {
 	font-size: 1.1vw;
 }
 
-h2  {
+#kontaktiraj  {
 	clear: both;
 	color: white;
 	font: Serif;
 	text-align: center;
 	font-style: italic;
 	font-size: 2vw;
+	height: 4vw;
+	margin: 1vw;
 }
 
 #dugme {
@@ -312,8 +382,11 @@ h2  {
 	color: white;
 }
 
+
 .drustvenemreze li:hover {
-	color:#B8B8B8;
 	list-style-image: url("Slike/strelica.png") ;
-	color:#B8B8B8;
+}
+
+a.fb:hover, a.yt:hover {
+	color:silver;
 }
