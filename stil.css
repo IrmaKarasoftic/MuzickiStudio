@@ -390,3 +390,11 @@ textarea {
 a.fb:hover, a.yt:hover {
 	color:silver;
 }
+
+.vrijeme {
+    text-align:left;
+    font-size:13px;
+    color:#grey;
+    margin-bottom: 0;
+    padding-bottom:0;
+}
