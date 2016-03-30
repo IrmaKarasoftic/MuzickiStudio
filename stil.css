@@ -195,7 +195,7 @@ body {
 }
 
 .GlavniDioNovosti {
-	margin-top: 7vw;
+	margin-top: 3.5vw;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
@@ -398,3 +398,19 @@ a.fb:hover, a.yt:hover {
     margin-bottom: 0;
     padding-bottom:0;
 }
+
+
+.izdvoji  {
+	font-size: 1.3vw;
+  width: 200px;
+	opacity:0.8;
+	color: white;
+	background-color: #DE1B1B;
+	border: 0.5vw double white;
+	margin-left: 2vw;
+	}
+
+	#opcija {
+		color: #FA6464;
+		background-color: white;
+		}

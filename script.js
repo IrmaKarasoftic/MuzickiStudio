@@ -71,3 +71,18 @@ window.onload = function () {
         }
     }
   }
+
+
+  function Izdvoji() {
+      var x = document.getElementById("opcija").value;
+      var novosti = document.getElementsByClassName("Novost");
+      var vrijemeNovost=document.getElementsByClassName("vrijeme");
+      broj_novosti=novosti.length;
+      var postavljeno = "";
+      var vrijeme = 0;
+      var i=0;
+
+
+      console.log(vrijemeNovost);
+
+}
