@@ -57,7 +57,7 @@ body {
 
 #meni a:active {
 	text-decoration: none;
-	outline: 0.3px solid red;
+	outline: 0.1vw solid red;
 	color: #8C0000;
 }
 
@@ -190,7 +190,7 @@ body {
 
 .omeni a:active {
 	text-decoration: none;
-	outline: 0.3px solid red;
+	outline: 0.1vw solid red;
 	color: #8C0000;
 }
 
@@ -219,6 +219,7 @@ body {
 	margin: 0.5vw;
 	overflow: hidden;
 	background-size: contain;
+	overflow: hidden;
 }
 
 .GlavniDioNovosti .Novost p
@@ -233,6 +234,8 @@ body {
 	align-content:center;
 }
 
+
+
 .Novost img
 {
 	display: inline-block;
@@ -243,20 +246,6 @@ body {
 
 .Novost:hover {
 	opacity:0.7;
-}
-
-.Novost p
-{
-	position: absolute;
-	bottom: 1.3vw;
-}
-
-.Novost .vrijeme
-{
-	bottom: 0;
-	float:left;
-	height:1vw;
-	text-align: center;
 }
 
 table {
@@ -408,11 +397,15 @@ a.fb:hover, a.yt:hover {
 }
 
 .vrijeme {
-	text-align:left;
-	font-size:0.8vw;
+	text-align:center;
+	font-size:0.9vw;
 	color:grey;
 	margin-bottom: 0;
 	padding-bottom:0;
+	padding-top: 0.3vw;
+	position: absolute;
+	clear:both;
+	width: 49%;
 }
 
 select#izdvoji {
