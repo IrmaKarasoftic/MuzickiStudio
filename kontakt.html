@@ -33,23 +33,23 @@
 <div id="kontakt">
   <form class="FormaKontakt">
     <label>Ime</label>
-    <input type="text" id="ime" name="ime" onkeypress="ValidirajIme(this)" onfocusout="ValidirajIme(this)" required>
+    <input type="text" id="ime" name="ime" onkeyup="ValidirajIme(this)" required>
 
     <label>Prezime</label>
-    <input type="text" id="prezime" name="prezime" onkeyup="return ValidirajPrezime(this)" required="" pattern="[A-Z][a-z]*">
+    <input type="text" id="prezime" name="prezime" onkeyup="ValidirajPrezime(this)" required>
 
-    <label>E-mail</label>
-    <input type="email" id="mail" name="mail" required="" onkeyup="return ValidirajMail(this)">
+    <label>E-mail</label> <img src="Slike/hint.png" alt="Email mora biti u formatu primjer@primjer.primjer" title="Email mora biti u formatu primjer@primjer.primjer" id="email_hint"/>
+    <input type="email" id="mail" name="mail" onkeyup="ValidirajMail(this)" required>
     <br>
-
-    <label>Adresa</label>
-    <input type="text" id="adresa" name="adresa" onkeyup="return Validiraj(this)" required>
+<!-- Ukoliko se unese broj telefona, ne mora se unijeti pitanje, korisnik ce biti pozvan-->
+    <label>Broj telefona</label> <img src="Slike/hint.png" alt="Telefon mora biti u formatu 06x/xxx-xxx(x)" title="Telefon mora biti u formatu 06x/xxx-xxx(x)" id="telefon_hint"/>
+    <input type="text" id="telefon" name="telefon" onkeyup="ValidirajTelefon(this)" required>
 
     <label>Vaše pitanje:</label>
-    <textarea id="pitanje" name="pitanje"></textarea>
+    <textarea id="pitanje" name="pitanje" required></textarea>
     <br><br>
 
-    <input type="submit" id="dugme" value="Pošalji upit">
+    <input type="submit" id="dugme" value="Pošalji upit" onclick="ProvjeriPolja(this)">
   </form>
 
 </div>

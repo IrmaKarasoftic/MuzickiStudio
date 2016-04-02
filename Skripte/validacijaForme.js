@@ -2,7 +2,7 @@ function ValidirajIme(val)
 {
   var naziv = document.getElementById("ime");
   var tekst = document.getElementById("ime").value;
-  var reg = /^[A-Z][a-z]+$/igm;
+  var reg = /^[A-Z][a-z]+$/gm;
   if(!(reg.test(tekst)))
   {
     naziv.style.backgroundColor="#FF9494";
@@ -12,43 +12,58 @@ function ValidirajIme(val)
   }
 }
 
-function Validiraj()
+function ValidirajPrezime(val)
 {
-  var em=document.getElementById("email").value;
-  var ad=document.getElementById("adresa").value;
-  if(em != "" && ad != "") return false;
-  if(em != "" && ad == "")
+  var naziv = document.getElementById("prezime");
+  var tekst = document.getElementById("prezime").value;
+  var reg = /^[A-Z][a-z]+$/gm;
+  if(!(reg.test(tekst)))
   {
-    em.required=false;
-    return true;
+    naziv.style.backgroundColor="#FF9494";
   }
-  if(em == "" && ad != "")
-  {
-    ad.required=false;
-    return true;
+  else {
+    naziv.style.backgroundColor="white";
   }
-  else return true;
-}
-
-  function ValidirajPrezime(val)
-{
-  var naziv=document.getElementById("prezime");
-  if(val.checkValidity()) naziv.required=false;
-  else naziv.required=true;
 }
 
 function ValidirajMail(val)
 {
-  Validiraj();
-  var naziv=document.getElementById("mail");
-  if(val.checkValidity()) naziv.required=false;
-  else naziv.required=true;
+  var naziv = document.getElementById("mail");
+  var tekst = document.getElementById("mail").value;
+  /*ovaj regex nece prihvatiti nista osim pravog unosa emaila: bilo koje zagrade, ne dozvoljava simbole na pocetku emaila*/
+  var reg = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
+  if(!(reg.test(tekst)))
+  {
+    naziv.style.backgroundColor="#FF9494";
+  }
+  else {
+    naziv.style.backgroundColor="white";
+  }
 }
 
-function ValidirajAdresu(val)
+function ValidirajTelefon(val)
 {
-  Validiraj();
-  var naziv=document.getElementById("adresa");
-  if(val.checkValidity()) naziv.required=false;
-  else naziv.required=true;
+  var naziv = document.getElementById("telefon");
+  var tekst = document.getElementById("telefon").value;
+  var reg = /^[0][6][0|1|2][\/][0-9]{3}[-][0-9]{3}[0-9]?$/igm;
+  if(!(reg.test(tekst)))
+  {
+    naziv.style.backgroundColor="#FF9494";
+  }
+  else {
+    naziv.style.backgroundColor="white";
+  }
+}
+
+function ProvjeriPolja(val)
+{
+  var tel = document.getElementById("telefon");
+  var kom = document.getElementById("pitanje");
+
+  var telefon = document.getElementById("telefon").value;
+  var komentar = document.getElementById("pitanje").value;
+  if (telefon != "") kom.required=false;
+  else kom.required=true;
+  if (komentar != "") tel.required=false;
+  else tel.required=true;
 }
