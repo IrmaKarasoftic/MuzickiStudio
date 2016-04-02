@@ -3,7 +3,7 @@
 	<HEAD>
 		<TITLE>Sound Art Studio</TITLE>
 		<link rel="stylesheet" type="text/css" href="stil.css">
-		<script src="script.js"></script>
+		<script src="Skripte/script.js"></script>
 		<META charset=utf-8>
 		</HEAD>
 		<BODY>
@@ -24,12 +24,13 @@
 				</ul>
 			</div>
 
-			<select class="izdvoji" onchange="Izdvoji()">
-			<option value="sve">Sve novosti</option>
+			<select id="izdvoji" onchange="Izdvoji()">
+				<option value="sve">Sve novosti</option>
 				<option value="danasnje" id="opcija">Danasnje novosti</option>
 				<option value="sedmicne" id="opcija">Novosti ove sedmice</option>
 				<option value="mjesecne" id="opcija">Novosti ovog mjeseca</option>
 			</select>
+
 
 			<div class="GlavniDioNovosti">
 
@@ -38,7 +39,8 @@
 						<p> Objavljena je obrada pjesme
 							<a href="https://www.youtube.com/watch?v=En7SDhn48Us&feature=share" target=_blank>Zemljo moja</a> (Latif Moćević).
 							Aranžman: Halid Hajduković.<br>
-							<label class="vrijeme">March 29, 2016 23:11:59</label></p>
+							<label class="vrijeme">April 2, 2016 11:11:59</label></p>
+							<label class="pomvrijeme">April 2, 2016 11:11:59</label>
 							<img src="Slike/sas.jpg" alt="Logo">
 						</div>
 
@@ -47,6 +49,7 @@
 							<a href="https://www.youtube.com/watch?v=En7SDhn48Us&feature=share" target=_blank>Zemljo moja</a> (Latif Moćević).
 							Aranžman: Halid Hajduković.<br>
 							<label class="vrijeme">March 29, 2016 23:10:59</label></p>
+							<label class="pomvrijeme">March 29, 2016 23:10:59</label>
 							<img src="Slike/sas.jpg" alt="Logo"></div>
 						</div>
 
@@ -54,6 +57,7 @@
 							<div class="Novost"><p>Objavljen je cover pjesme <a href="https://www.youtube.com/watch?v=MeCjl_ZLjsE" target=_blank>Pesma o nama</a> (Irma Karasoftić).
 								Aranžman: Halid Hajduković.<br>
 								<label class="vrijeme">March 16, 2016 17:16:00</label></p>
+								<label class="pomvrijeme">March 16, 2016 17:16:00</label>
 								<img src="Slike/sas.jpg" alt="Logo">
 							</div>
 
@@ -62,6 +66,7 @@
 									<a href="https://www.youtube.com/watch?v=En7SDhn48Us&feature=share" target=_blank>Zemljo moja</a> (Latif Moćević).
 									Aranžman: Halid Hajduković.<br>
 									<label class="vrijeme">March 20, 2016 17:16:00</label></p>
+									<label class="pomvrijeme">March 20, 2016 17:16:00</label>
 									<img src="Slike/sas.jpg" alt="Logo">
 								</div>
 							</div>
@@ -72,6 +77,7 @@
 										<a href="https://www.youtube.com/watch?v=MeCjl_ZLjsE" target=_blank>Pesma o nama</a> (Irma Karasoftić).
 										Aranžman: Halid Hajduković.<br>
 										<label class="vrijeme">March 27, 2016 17:16:00</label></p>
+										<label class="pomvrijeme">March 27, 2016 17:16:00</label>
 										<img src="Slike/sas.jpg" alt="Logo">
 									</div>
 
@@ -80,6 +86,7 @@
 											<a href="https://www.youtube.com/watch?v=MeCjl_ZLjsE" target=_blank>Pesma o nama</a> (Irma Karasoftić).
 											Aranžman: Halid Hajduković.<br>
 											<label class="vrijeme">January 27, 2016 17:16:00</label></p>
+											<label class="pomvrijeme">January 27, 2016 17:16:00</label>
 											<img src="Slike/sas.jpg" alt="Logo">
 										</div>
 

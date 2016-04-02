@@ -46,19 +46,19 @@ body {
 }
 
 #meni a:visited {
-    text-decoration: none;
-		color: red;
+	text-decoration: none;
+	color: red;
 }
 
 #meni a:hover {
-    color: #FF8080;
-		text-decoration: none;
+	color: #FF8080;
+	text-decoration: none;
 }
 
 #meni a:active {
-    text-decoration: none;
-    outline: 0.3px solid red;
-		color: #8C0000;
+	text-decoration: none;
+	outline: 0.3px solid red;
+	color: #8C0000;
 }
 
 .GlavniDioCoveri {
@@ -179,19 +179,19 @@ body {
 }
 
 .omeni a:visited {
-    text-decoration: none;
-		color: red;
+	text-decoration: none;
+	color: red;
 }
 
 .omeni a:hover {
-    color: #FF8080;
-		text-decoration: none;
+	color: #FF8080;
+	text-decoration: none;
 }
 
 .omeni a:active {
-    text-decoration: none;
-    outline: 0.3px solid red;
-		color: #8C0000;
+	text-decoration: none;
+	outline: 0.3px solid red;
+	color: #8C0000;
 }
 
 .GlavniDioNovosti {
@@ -319,6 +319,7 @@ input[type=email], input[type=text]
 	border: 0.2vw solid silver;
 	border-radius: 0.4vw;;
 	font-family: serif;
+	font-size: 1.2vw;
 	height: 2vw;
 }
 
@@ -392,25 +393,31 @@ a.fb:hover, a.yt:hover {
 }
 
 .vrijeme {
-    text-align:left;
-    font-size:13px;
-    color:#grey;
-    margin-bottom: 0;
-    padding-bottom:0;
+	text-align:left;
+	font-size:0.8vw;
+	color:grey;
+	margin-bottom: 0;
+	padding-bottom:0;
 }
 
+select#izdvoji {
+    width: 20%;
+}
 
-.izdvoji  {
+#izdvoji  {
 	font-size: 1.3vw;
-  width: 200px;
 	opacity:0.8;
 	color: white;
+	margin-left: 2vw;
 	background-color: #DE1B1B;
 	border: 0.5vw double white;
-	margin-left: 2vw;
-	}
+}
 
-	#opcija {
-		color: #FA6464;
-		background-color: white;
-		}
+#opcija {
+	color: #FA6464;
+	background-color: white;
+}
+
+.pomvrijeme {
+	display: none;
+}
