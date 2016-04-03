@@ -30,8 +30,8 @@ function ValidirajMail(val)
 {
   var naziv = document.getElementById("mail");
   var tekst = document.getElementById("mail").value;
-  /*ovaj regex nece prihvatiti nista osim pravog unosa emaila: bilo koje zagrade, ne dozvoljava simbole na pocetku emaila*/
-  var reg = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
+
+  var reg = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
   if(!(reg.test(tekst)))
   {
     naziv.style.backgroundColor="#FF9494";
@@ -45,7 +45,7 @@ function ValidirajTelefon(val)
 {
   var naziv = document.getElementById("telefon");
   var tekst = document.getElementById("telefon").value;
-  var reg = /^[0][6][0|1|2][\/][0-9]{3}[-][0-9]{3}[0-9]?$/igm;
+  var reg = /^[0][6][012][\/][0-9]{3}[-][0-9]{3}[0-9]?$/igm;
   if(!(reg.test(tekst)))
   {
     naziv.style.backgroundColor="#FF9494";
