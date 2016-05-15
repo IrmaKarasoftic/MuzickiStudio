@@ -14,25 +14,28 @@
   	<div id="linija"></div>
   </div>
   </div>
-  <a class="skip-main" href="kontakt" alt="Preskoči čitanje menija">Preskoči čitanje menija</a>
+  <a class="skip-main" href="kontakt">Preskoči čitanje menija</a>
   	<div id="meni">
   		<ul>
-  		<li><a href="index.html">Naslovnica</a></li>
-  		<li><a href="omeni.html">O meni</a></li>
-  		<li><a href="Coveri.html">Coveri</a></li>
-  		<li><a href="Cjenovnik.html">Cjenovnik</a></li>
+  		<li><a href="index.php">Naslovnica</a></li>
+  		<li><a href="omeni.php">O meni</a></li>
+  		<li><a href="Coveri.php">Coveri</a></li>
+  		<li><a href="Cjenovnik.php">Cjenovnik</a></li>
   		<li><a href="#">Kontakt</a></li>
+      <li><a href="Login.php">Login</a></li>
   		</ul>
   	</div>
     <div class="kontaktiraj">
     <ul class="drustvenemreze">
-    <li><a class="fb" alt="Facebook" href="https://www.facebook.com/halid.hajdukovic?fref=ts" target="_blank">Facebook</a></li>
-    <li><a class="yt" alt="Youtube" href="https://www.youtube.com/channel/UCXasrB2DKH0pSv3w4Fnua4g" target="_blank">Youtube</a></li>
+    <li><a class="fb" href="https://www.facebook.com/halid.hajdukovic?fref=ts" target="_blank">Facebook</a></li>
+    <li><a class="yt" href="https://www.youtube.com/channel/UCXasrB2DKH0pSv3w4Fnua4g" target="_blank">Youtube</a></li>
     </ul>
   </div>
 
-<div id="kontakt" name="kontakt">
+<div id="kontakt">
   <form class="FormaKontakt">
+    <legend class="legendaKontakt">Kontaktirajte nas!</legend>
+
     <label>Ime</label>
     <input type="text" id="ime" name="ime" onkeyup="ValidirajIme(this)" required>
 
@@ -47,13 +50,12 @@
     <input type="text" id="telefon" name="telefon" onkeyup="ValidirajTelefon(this)" required>
 
     <label>Vaše pitanje:</label>
-    <textarea id="pitanje" alt="Unesite pitanje" name="pitanje" required></textarea>
+    <textarea id="pitanje" name="pitanje" required></textarea>
     <br><br>
 
-    <input type="submit" id="dugme" alt="Pošalji upit" value="Pošalji upit" onclick="ProvjeriPolja(this)">
+    <input type="submit" id="dugme" value="Pošalji upit" onclick="ProvjeriPolja(this)">
   </form>
 
 </div>
-  <p id="kontaktiraj">Kontaktirajte me!</p>
 </body>
 </html>

@@ -19,10 +19,11 @@
 			<div id="meni">
 				<ul>
 					<li><a href="#">Naslovnica</a></li>
-					<li><a href="omeni.html">O meni</a></li>
-					<li><a href="Coveri.html">Coveri</a></li>
-					<li><a href="Cjenovnik.html">Cjenovnik</a></li>
-					<li><a href="Kontakt.html">Kontakt</a></li>
+					<li><a href="omeni.php">O meni</a></li>
+					<li><a href="Coveri.php">Coveri</a></li>
+					<li><a href="Cjenovnik.php">Cjenovnik</a></li>
+					<li><a href="Kontakt.php">Kontakt</a></li>
+					<li><a href="Login.php">Login</a></li>
 				</ul>
 			</div>
 
@@ -32,8 +33,9 @@
 				<option value="sedmicne" id="opcija2">Novosti ove sedmice</option>
 				<option value="mjesecne" id="opcija3">Novosti ovog mjeseca</option>
 			</select>
-
-
+			<div class="Abc">
+			<input type="checkbox" name="alphabetical" value="no" id="cb">Sortiraj abecedno<br>
+			</div>
 			<div class="GlavniDioNovosti" name="GlavniDioNovosti">
 
 				<div class="Red">

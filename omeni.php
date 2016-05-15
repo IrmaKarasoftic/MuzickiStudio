@@ -16,11 +16,12 @@
 <a class="skip-main" href="omeni" alt="Preskoči čitanje menija">Preskoči čitanje menija</a>
 	<div id="meni">
 		<ul>
-		<li><a href="index.html">Naslovnica</a></li>
+		<li><a href="index.php">Naslovnica</a></li>
 		<li><a href="#">O meni</a></li>
-		<li><a href="Coveri.html">Coveri</a></li>
-		<li><a href="Cjenovnik.html">Cjenovnik</a></li>
-		<li><a href="Kontakt.html">Kontakt</a></li>
+		<li><a href="Coveri.php">Coveri</a></li>
+		<li><a href="Cjenovnik.php">Cjenovnik</a></li>
+		<li><a href="Kontakt.php">Kontakt</a></li>
+		<li><a href="Login.php">Login</a></li>
 		</ul>
 	</div>
 
