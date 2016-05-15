@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <TITLE>Coveri</TITLE>
-<link rel="stylesheet" type="text/css" href="stil.css">
+<link rel="stylesheet" type="text/css" href="../stil.css">
 <META charset=utf-8>
 </HEAD>
 <BODY>

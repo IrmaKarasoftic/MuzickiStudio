@@ -2,7 +2,7 @@
 <HTML>
 	<HEAD>
 		<TITLE>Login</TITLE>
-		<link rel="stylesheet" type="text/css" href="stil.css">
+		<link rel="stylesheet" type="text/css" href="../stil.css">
 		<META charset=utf-8>
 		</HEAD>
 		<BODY>
@@ -17,7 +17,7 @@
 				$usernameT = $_POST['username'];
 				$passwordT = $_POST['password'];
 				
-				$podaci=file('loginPodaci.csv');
+				$podaci=file('../loginPodaci.csv');
 
 				foreach($podaci as $korisnik) {
 					$podatak=explode(',',$korisnik);

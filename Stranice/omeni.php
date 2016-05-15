@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <TITLE>O meni</TITLE>
-<link rel="stylesheet" type="text/css" href="stil.css">
+<link rel="stylesheet" type="text/css" href="../stil.css">
 <META charset=utf-8>
 </HEAD>
 <BODY>
@@ -38,7 +38,7 @@
 
 	Priču mog života (koju je snimila BHT1) možete poslušati <a href="https://www.youtube.com/watch?v=hAbPWu4DT90" target="_blank">ovdje.</a>
 	</p>
-	<img src="Slike/halidslika.jpg" alt="Halid Hajduković">
+	<img src="../Slike/halidslika.jpg" alt="Halid Hajduković">
 	</div>
 
 

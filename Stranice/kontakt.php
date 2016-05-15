@@ -2,7 +2,7 @@
 <html>
 <HEAD>
 <TITLE>Kontakt</TITLE>
-<link rel="stylesheet" type="text/css" href="stil.css">
+<link rel="stylesheet" type="text/css" href="../stil.css">
 <script src="Skripte/validacijaForme.js"></script>
 <META charset=utf-8>
 </HEAD>
@@ -42,11 +42,11 @@
     <label>Prezime</label>
     <input type="text" id="prezime" name="prezime" onkeyup="ValidirajPrezime(this)" required>
 
-    <label>E-mail</label> <img src="Slike/hint.png" alt="Unesite e-mail" title="Email mora biti u formatu primjer@primjer.primjer" id="email_hint"/>
+    <label>E-mail</label> <img src="../Slike/hint.png" alt="Unesite e-mail" title="Email mora biti u formatu primjer@primjer.primjer" id="email_hint"/>
     <input type="email" id="mail" name="mail" onkeyup="ValidirajMail(this)" required>
     <br>
 <!-- Ukoliko se unese broj telefona, ne mora se unijeti pitanje, korisnik ce biti pozvan-->
-    <label>Broj telefona</label> <img src="Slike/hint.png" alt="Unesite broj telefona" title="Telefon mora biti u formatu 06x/xxx-xxx(x)" id="telefon_hint"/>
+    <label>Broj telefona</label> <img src="../Slike/hint.png" alt="Unesite broj telefona" title="Telefon mora biti u formatu 06x/xxx-xxx(x)" id="telefon_hint"/>
     <input type="text" id="telefon" name="telefon" onkeyup="ValidirajTelefon(this)" required>
 
     <label>Vaše pitanje:</label>

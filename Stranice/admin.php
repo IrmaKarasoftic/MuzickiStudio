@@ -2,7 +2,7 @@
 <HTML>
 	<HEAD>
 		<TITLE>Sound Art Studio</TITLE>
-		<link rel="stylesheet" type="text/css" href="stil.css">
+		<link rel="stylesheet" type="text/css" href="../stil.css">
 		<script src="Skripte/script.js"></script>
 		<META charset=utf-8>
 		</HEAD>
