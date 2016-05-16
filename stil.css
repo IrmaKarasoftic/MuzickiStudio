@@ -476,7 +476,7 @@ textarea {
 
 
 .drustvenemreze li:hover {
-	list-style-image: url("Slike/strelica.png") ;
+	list-style-image: url("../Slike/strelica.png") ;
 }
 
 a.fb:hover, a.yt:hover {
@@ -686,7 +686,7 @@ a.skip-main:focus, a.skip-main:active {
 	position: relative;
 	padding-top: 2vw;
 	text-align: center;
-	width: 39.8vw;
+	width: 40vw;
 	height: 4vw;
 	display: block;
 	background: #FF7052;
@@ -722,12 +722,14 @@ a.skip-main:focus, a.skip-main:active {
 	box-shadow: 0 0 0.3vw #FF7052;
 	transition: 0.5s ease-out;
 }
+
 .LoginSubmit:hover,
 .LoginSubmit:focus {
 	background: #FF7052;
 	color: #fff;
 	outline: 0;
 }
+
 
 .LoginInput label
 {

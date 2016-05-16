@@ -10,7 +10,6 @@
 			session_start();
 			$poruka = '';
 			$uredu = false;
-			
 
 			if (isset($_POST['loginSubmit']) && !empty($_POST['username']) && !empty($_POST['password'])) 
 			{
@@ -26,10 +25,9 @@
 						$poruka="";
 						$uredu = true;
 						break;
-
 					}
 				}
-				if(! $uredu) {
+				if(! $uredu) {	
 					$poruka = 'Pogrešan username ili password';
 				}
 			}
@@ -37,7 +35,7 @@
 			if($uredu) {
 				header("Location: admin.php");
 			}
-			?>
+			?>  
 			
 			<div id="zaglavlje">
 				<h1>Sound Art Studio</h1>
@@ -57,21 +55,22 @@
 					<li><a href="Kontakt.php">Kontakt</a></li>
 					<li><a href="#">Login</a></li>
 				</ul>
-			</div>
+ 			</div>
+
 			<div id="LoginPage">
-				<form action="login.php" class="login" method="post">
-					<div class="LoginInput">
-						<legend class="legend">Molimo unesite Vaše login podatke:</legend>
+  				<form action="login.php" class="login" method="post">
+ 					<div class="LoginInput">
+ 						<div class="legend">Molimo unesite Vaše login podatke:</div>
 						<br><label>Username</label>
 						<input type="text" id="username" name="username" placeholder="Username" required>
 						<label>Password</label>
 						<input type="password" id="password" name="password" placeholder="Password" required />
 					</div>
-					<div id="Poruka"><h4><?php echo $poruka; ?></h4></div>
-					<input type="submit" name="loginSubmit" value="OK" class="LoginSubmit"></input>
+ 					<div id="Poruka"><h4><?php echo $poruka; ?></h4></div>
+					<input type="submit" name="loginSubmit" value="OK" class="LoginSubmit">
 
-				</form>
+				</form> 
 
-			</div>
+			</div> 
 		</BODY>
 	</HTML>

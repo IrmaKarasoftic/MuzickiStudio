@@ -24,7 +24,6 @@
 		<li><a href="Login.php">Login</a></li>
 		</ul>
 	</div>
-
 	<div class="omeni" name="omeni"><p>
 	Zovem se Halid Hajduković i rođen sam 1988. godine. Završio sam Osnovnu školu "Centar za slijepu i slabovidnu djecu i omladinu",
 	i Nižu muzičku školu - odsjek Gitara. Nakon toga završio sam i Srednju muzičku školu
@@ -39,8 +38,7 @@
 	Priču mog života (koju je snimila BHT1) možete poslušati <a href="https://www.youtube.com/watch?v=hAbPWu4DT90" target="_blank">ovdje.</a>
 	</p>
 	<img src="../Slike/halidslika.jpg" alt="Halid Hajduković">
+
 	</div>
-
-
 	</BODY>
 </HTML>

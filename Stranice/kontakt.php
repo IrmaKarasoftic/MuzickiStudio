@@ -34,7 +34,7 @@
 
 <div id="kontakt">
   <form class="FormaKontakt">
-    <legend class="legendaKontakt">Kontaktirajte nas!</legend>
+    <div class="legendaKontakt">Kontaktirajte nas!</div>
 
     <label>Ime</label>
     <input type="text" id="ime" name="ime" onkeyup="ValidirajIme(this)" required>

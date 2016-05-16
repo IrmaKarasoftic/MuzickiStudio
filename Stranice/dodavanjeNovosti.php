@@ -23,7 +23,6 @@
 			fwrite($upis, $podaciZaUpisati);
 			fclose($upis);
 			?>
-
 			<div id="zaglavlje">
 				<h1>Sound Art Studio</h1>
 				<div id="logo">
