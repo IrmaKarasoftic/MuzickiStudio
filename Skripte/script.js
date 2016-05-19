@@ -23,7 +23,7 @@ function izracunajInterval(datum) {
     var pommjesec = mjeseci[datum.getMonth()];
     var pomgodina = datum.getFullYear();
 
-      return dan + ", "+ pomdan+". "+pommjesec+". "+pomgodina;
+    return dan + ", "+ pomdan+". "+pommjesec+". "+pomgodina;
   }
 
   interval = Math.floor(sekunde / 86400);
@@ -111,56 +111,49 @@ function raspon(datum) {
 
 function Izdvoji() {
 
-  /*var x = document.getElementById("izdvoji").value;
+  var x = document.getElementById("izdvoji").value;
+  var Novosti = document.getElementsByClassName("Novost");
+  var datumi = document.getElementsByClassName("pomvrijeme");
 
-  if (x=="sedmicne"){
-  brojDozvoljenihSekundi=604800;
-}
-else if (x=="danasnje"){
-brojDozvoljenihSekundi=86400;
-}
-else if (x=="mjesecne"){
-brojDozvoljenihSekundi=2592000;
-}
-console.log(x);
-console.log(brojDozvoljenihSekundi);*/
+  if ( x == "danasnje")
+  {
+    for (var i = 0; i < datumi.length; i++) {
+      var d = new Date(datumi[i].innerHTML);
+      if(raspon(d) != 3) Novosti[i].style.display = 'none';
+      else Novosti[i].style.display = 'inline-block';
+    }
+  }
 
-var x = document.getElementById("izdvoji").value;
-var Novosti = document.getElementsByClassName("Novost");
-var datumi = document.getElementsByClassName("pomvrijeme");
+  if ( x == "sedmicne")
+  {
+    for (var i = 0; i < datumi.length; i++) {
+      var d = new Date(datumi[i].innerHTML);
+      if(raspon(d) != 2 && raspon(d) != 3) Novosti[i].style.display = 'none';
+      else Novosti[i].style.display = 'inline-block';
+    }
+  }
 
-if ( x == "danasnje")
-{
-  for (var i = 0; i < datumi.length; i++) {
-    var d = new Date(datumi[i].innerHTML);
-    if(raspon(d) != 3) Novosti[i].style.display = 'none';
-    else Novosti[i].style.display = 'inline-block';
+  if ( x == "mjesecne")
+  {
+    for (var i = 0; i < datumi.length; i++) {
+      var d = new Date(datumi[i].innerHTML);
+      if(raspon(d) == -1) Novosti[i].style.display = 'none';
+      else Novosti[i].style.display = 'inline-block';
+    }
+  }
+
+  if( x == "sve")
+  {
+    for (var i = 0; i < datumi.length; i++) {
+      var d = new Date(datumi[i].innerHTML);
+      Novosti[i].style.display = 'inline-block';
+    }
   }
 }
-
-if ( x == "sedmicne")
+function provjeriDaLiJePrijavljen()
 {
-  for (var i = 0; i < datumi.length; i++) {
-    var d = new Date(datumi[i].innerHTML);
-    if(raspon(d) != 2 && raspon(d) != 3) Novosti[i].style.display = 'none';
-    else Novosti[i].style.display = 'inline-block';
-  }
-}
-
-if ( x == "mjesecne")
-{
-  for (var i = 0; i < datumi.length; i++) {
-    var d = new Date(datumi[i].innerHTML);
-    if(raspon(d) == -1) Novosti[i].style.display = 'none';
-    else Novosti[i].style.display = 'inline-block';
-  }
-}
-
-if( x == "sve")
-{
-  for (var i = 0; i < datumi.length; i++) {
-    var d = new Date(datumi[i].innerHTML);
-    Novosti[i].style.display = 'inline-block';
-  }
-}
+  if(isset($_SESSION['username']))
+    return true;
+  else
+    return false;
 }

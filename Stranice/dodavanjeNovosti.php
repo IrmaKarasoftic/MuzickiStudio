@@ -11,18 +11,21 @@
 			<?php
 			$naziv="";
 			$tekst="";
-			$datum = date("D M d");
+			//May 18, 2016 21:02:59
+			$datum = date("M d, Y H:m:s");
 			if (isset($_POST['DodajButton']) && !empty($_POST['nazivVijesti']) && !empty($_POST['tekstVijesti'])) 
 			{
 				$naziv = $_POST['nazivVijesti'];
 				$tekst = $_POST['tekstVijesti'];
 			}
-			$upis=fopen("novosti.csv", "a");
-			$podaciZaUpisati = $naziv . "-!!!###-" . $tekst . "-!!!###-" . $datum;
+
+			$upis=fopen("../novosti.csv", "a");
+			$podaciZaUpisati = $datum . "%" . $tekst . "%" . $datum . "\r\n";
 
 			fwrite($upis, $podaciZaUpisati);
 			fclose($upis);
 			?>
+			
 			<div id="zaglavlje">
 				<h1>Sound Art Studio</h1>
 				<div id="logo">
