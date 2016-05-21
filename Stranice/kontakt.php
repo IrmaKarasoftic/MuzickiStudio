@@ -3,7 +3,7 @@
 <HEAD>
 <TITLE>Kontakt</TITLE>
 <link rel="stylesheet" type="text/css" href="../stil.css">
-<script src="Skripte/validacijaForme.js"></script>
+<script src="../Skripte/validacijaForme.js"></script>
 <META charset=utf-8>
 </HEAD>
 <body>

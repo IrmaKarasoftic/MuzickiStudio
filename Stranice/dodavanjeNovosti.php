@@ -3,7 +3,7 @@
 	<HEAD>
 		<TITLE>Dodavanje novosti</TITLE>
 		<link rel="stylesheet" type="text/css" href="../stil.css">
-		<script src="Skripte/novosti.js"></script>
+		<script src="../Skripte/UnosNovosti.js"></script>
 		<META charset=utf-8>
 		</HEAD>
 		<BODY>
@@ -11,12 +11,13 @@
 			<?php
 			$naziv="";
 			$tekst="";
-			//May 18, 2016 21:02:59
-			$datum = date("M d, Y H:m:s");
+			date_default_timezone_set("Europe/Sarajevo");
+			$datum = date("M d, Y H:i:s");
+			
 			if (isset($_POST['DodajButton']) && !empty($_POST['nazivVijesti']) && !empty($_POST['tekstVijesti'])) 
 			{
-				$naziv = $_POST['nazivVijesti'];
-				$tekst = $_POST['tekstVijesti'];
+				$naziv = htmlspecialchars($_POST['nazivVijesti']);
+				$tekst = htmlspecialchars($_POST['tekstVijesti']);
 			}
 
 			$upis=fopen("../novosti.csv", "a");
@@ -51,8 +52,8 @@
 					<input type="text" id="nazivVijesti" name="nazivVijesti" value="" placeholder="Naziv vijesti" required />
 					<textarea cols="40" id="tekstVijesti" name="tekstVijesti" rows="5" placeholder="Tekst vijesti" required></textarea> 
 					<div id="wrapper">
-					<input type="text" id="drzava" name="drzava" value="" placeholder="Dvoslovni kod države" required />
-					<input type="text" id="broj" name="broj" value="" placeholder="Broj telefona" required />
+					<input type="text" id="drzava" name="drzava" value="" placeholder="Dvoslovni kod države" onkeyup="ValidirajDrzavu(this)" required />
+					<input type="text" id="broj" name="broj" value="" placeholder="Broj telefona" onkeyup="ValidirajBroj(this)" required />
 					</div>
 					<button type="submit" class="DodajButton" name="DodajButton">Dodaj</button>
 				</div>

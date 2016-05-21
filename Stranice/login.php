@@ -13,8 +13,8 @@
 
 			if (isset($_POST['loginSubmit']) && !empty($_POST['username']) && !empty($_POST['password'])) 
 			{
-				$usernameT = $_POST['username'];
-				$passwordT = $_POST['password'];
+				$usernameT = htmlspecialchars($_POST['username']);
+				$passwordT = htmlspecialchars($_POST['password']);
 				
 				$podaci=file('../loginPodaci.csv');
 

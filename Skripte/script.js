@@ -157,3 +157,8 @@ function provjeriDaLiJePrijavljen()
   else
     return false;
 }
+
+function preventXSS($output)
+{
+  return htmlspecialchars($output, ENT_QUOTES, 'UTF-8');
+}
