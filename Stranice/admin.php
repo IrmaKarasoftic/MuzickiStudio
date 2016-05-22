@@ -3,7 +3,7 @@
 	<HEAD>
 		<TITLE>Sound Art Studio</TITLE>
 		<link rel="stylesheet" type="text/css" href="../stil.css">
-		<script src="Skripte/script.js"></script>
+		<script src="../Skripte/script.js"></script>
 		<META charset=utf-8>
 		</HEAD>
 		<BODY>
@@ -23,11 +23,30 @@
 					<li><a href="Coveri.php">Coveri</a></li>
 					<li><a href="Cjenovnik.php">Cjenovnik</a></li>
 					<li><a href="Kontakt.php">Kontakt</a></li>
-					<li><a href="logout.php">Logout</a></li>
 				</ul>
 			</div>
 			<form action="dodavanjeNovosti.php">
-			<input type="submit" id="DodavanjeNovosti" alt="Dodaj novost" value="Dodaj novost">
+				<input type="submit" id="DodavanjeNovosti" alt="Dodaj novost" value="Dodaj novost">
 			</form>
+			<?php
+			session_start();
+			if (isset($_POST['logout'])) {
+				unset($_SESSION['login']);
+				session_destroy();
+				echo '<script>alert("Uspjesno ste se izlogovali");</script>';
+				header("Location: login.php");
+			}
+
+			if(!isset($_SESSION['login'])){
+				print "<script>Alert('Logovan si bruda')";
+				header("Location: ../index.php");
+			}
+
+			if (isset($_SESSION['login']))
+			{
+				echo "<input type='submit' id='logout' alt='logout' name='logout' value='Logout'>";
+			}
+
+			?>
 		</BODY>
 	</HTML>

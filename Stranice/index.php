@@ -39,8 +39,20 @@
 			<div class="GlavniDioNovosti" name="GlavniDioNovosti">
 
 				<?php
+				include 'sortiranja.php';
 
 				$podaci=file('../novosti.csv');
+				/*
+				Ako treba po datumu
+
+				usort($podaci, "sortirajPoDatumu");
+
+				Po abecedi
+
+				usort($podaci, "sortirajAbecedno");
+
+
+				*/
 
 				foreach($podaci as $novost) {
 					$podatak=explode('%',$novost);

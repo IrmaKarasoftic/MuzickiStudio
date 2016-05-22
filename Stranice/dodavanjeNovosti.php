@@ -13,7 +13,7 @@
 			$tekst="";
 			date_default_timezone_set("Europe/Sarajevo");
 			$datum = date("M d, Y H:i:s");
-			
+
 			if (isset($_POST['DodajButton']) && !empty($_POST['nazivVijesti']) && !empty($_POST['tekstVijesti'])) 
 			{
 				$naziv = htmlspecialchars($_POST['nazivVijesti']);
@@ -43,7 +43,6 @@
 					<li><a href="Coveri.php">Coveri</a></li>
 					<li><a href="Cjenovnik.php">Cjenovnik</a></li>
 					<li><a href="Kontakt.php">Kontakt</a></li>
-					<li><a href="logout.php">Logout</a></li>
 				</ul>
 			</div>
 			<form action="dodavanjeNovosti.php" class="dodavanje" method="post">

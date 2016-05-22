@@ -27,8 +27,9 @@
 						break;
 					}
 				}
-				if(! $uredu) {	
+				if(!$uredu) {	
 					$poruka = 'Pogrešan username ili password';
+					$_SESSION['login'] = false;
 				}
 			}
 

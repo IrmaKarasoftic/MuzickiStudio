@@ -587,11 +587,10 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 /*Dodavanje novosti*/
-#DodavanjeNovosti {
-	position: absolute;
+#DodavanjeNovosti, #logout {
+	position: relative;
 	margin-top: 4vw;
 	margin-left: 45%;
-	position:absolute;
 	color: white;
 	width: 10%;
 	height:4.5vw;
@@ -604,7 +603,7 @@ a.skip-main:focus, a.skip-main:active {
 	background-color: #DE1B1B;
 }
 
-#DodavanjeNovosti:hover {
+#DodavanjeNovosti:hover, #logout:hover {
 	transition: 0.5s ease-out;
 	-moz-transition:0.5s ease-out; /* Firefox 4 */
 	-webkit-transition: 0.5s ease-out; /* Safari and Chrome */
