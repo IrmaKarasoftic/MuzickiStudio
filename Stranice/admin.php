@@ -26,7 +26,7 @@
 				</ul>
 			</div>
 			<form action="dodavanjeNovosti.php">
-				<input type="submit" id="DodavanjeNovosti" alt="Dodaj novost" value="Dodaj novost">
+				<input type="submit" id="DodavanjeNovosti" value="Dodaj novost">
 			</form>
 			<?php
 			session_start();
@@ -43,7 +43,7 @@
 
 			if (isset($_SESSION['login']))
 			{
-				echo "<form action='logout.php' method='POST'><input type='submit' id='logout' alt='logout' name='logout' value='Logout'></form>";
+				echo "<form action='logout.php' method='POST'><input type='submit' id='logout' name='logout' value='Logout'></form>";
 			}
 
 			?>

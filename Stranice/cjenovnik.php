@@ -16,7 +16,7 @@
 <?php
 session_start();
 ?>
-<a class="skip-main" href="#tabela" alt="Preskoči čitanje menija">Preskoči čitanje menija</a>
+<a class="skip-main" href="#tabela" >Preskoči čitanje menija</a>
 	<div id="meni">
 		<ul>
 		<li><a href="index.php">Naslovnica</a></li>
@@ -28,7 +28,7 @@ session_start();
 		</ul>
 	</div>
 
-	<table id="tabela" name="tabela">
+	<table id="tabela">
 	<tr class="prvi">
 		<th>Usluga</th>
 		<th>Količina</th>

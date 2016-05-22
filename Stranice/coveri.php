@@ -16,7 +16,7 @@ session_start();
 	<div id="linija"></div>
 </div>
 </div>
-<a class="skip-main" href="GlavniDioCoveri" alt="Preskoči čitanje menija">Preskoči čitanje menija</a>
+<a class="skip-main" href="GlavniDioCoveri" >Preskoči čitanje menija</a>
 	<div id="meni">
 		<ul>
 		<li><a href="index.php">Naslovnica</a></li>
@@ -28,7 +28,7 @@ session_start();
 		</ul>
 	</div>
 
-	<div class="GlavniDioCoveri" name="GlavniDioCoveri">
+	<div class="GlavniDioCoveri">
 	<div class="Pjesma">
 	<a href="https://www.youtube.com/watch?v=BHxn53COWbY" target=_blank><img src="../Slike/run.jpg" alt="Irma Karasoftić - Run"/><span>Irma Karasoftić - Run</span></a>
 	<a href="https://www.youtube.com/watch?v=kBrC61bTKC8" target=_blank><img src="../Slike/goran.jpg" alt="Goran Pavlović - Jedina"/><span>Goran Pavlović - Jedina</span></a>

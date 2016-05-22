@@ -41,7 +41,7 @@
 			<div class="Abc">
 				<input type="checkbox" name="sortiraj" value="no" id="sortiraj" onchange="otkaceno(this)" >Sortiraj abecedno<br>
 			</div>
-			<div class="GlavniDioNovosti" name="GlavniDioNovosti">
+			<div class="GlavniDioNovosti" >
 
 				<?php
 				function PoDatumu($novosti)

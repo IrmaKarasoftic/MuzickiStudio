@@ -16,7 +16,7 @@ session_start();
 	<div id="linija"></div>
 </div>
 </div>
-<a class="skip-main" href="omeni" alt="Preskoči čitanje menija">Preskoči čitanje menija</a>
+<a class="skip-main" href="omeni" >Preskoči čitanje menija</a>
 	<div id="meni">
 		<ul>
 		<li><a href="index.php">Naslovnica</a></li>
@@ -27,7 +27,7 @@ session_start();
 		<li><a href="Login.php">Login</a></li>
 		</ul>
 	</div>
-	<div class="omeni" name="omeni"><p>
+	<div class="omeni"><p>
 	Zovem se Halid Hajduković i rođen sam 1988. godine. Završio sam Osnovnu školu "Centar za slijepu i slabovidnu djecu i omladinu",
 	i Nižu muzičku školu - odsjek Gitara. Nakon toga završio sam i Srednju muzičku školu
 	 u Sarajevu. <br><br> Od 2007. do 2012. aktivni sam član ansambla "Dah ljubavi", a pored toga svirao sam i
