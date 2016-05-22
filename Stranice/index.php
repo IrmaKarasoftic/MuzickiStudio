@@ -14,7 +14,7 @@
 					<div id="linija"></div>
 				</div>
 			</div>
-
+			
 			<a class="skip-main" href="GlavniDioNovosti">Preskoči čitanje menija</a>
 			<div id="meni">
 				<ul>
