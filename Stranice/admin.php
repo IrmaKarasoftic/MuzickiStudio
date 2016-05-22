@@ -18,7 +18,7 @@
 			<a class="skip-main" href="GlavniDioNovosti">Preskoči čitanje menija</a>
 			<div id="meni">
 				<ul>
-					<li><a href="#">Naslovnica</a></li>
+					<li><a href="index.php">Naslovnica</a></li>
 					<li><a href="omeni.php">O meni</a></li>
 					<li><a href="Coveri.php">Coveri</a></li>
 					<li><a href="Cjenovnik.php">Cjenovnik</a></li>
@@ -38,7 +38,6 @@
 			}
 
 			if(!isset($_SESSION['login'])){
-				print "<script>Alert('Logovan si bruda')";
 				header("Location: ../index.php");
 			}
 

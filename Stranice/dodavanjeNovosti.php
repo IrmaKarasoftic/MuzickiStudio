@@ -22,12 +22,14 @@
 				$naziv = htmlspecialchars($_POST['nazivVijesti']);
 				$tekst = htmlspecialchars($_POST['tekstVijesti']);
 			}
-
+			if (strlen($tekst)>1)
+			{
 			$upis=fopen("../novosti.csv", "a");
 			$podaciZaUpisati = $datum . "%" . $tekst . "%" . $datum . "\r\n";
 
 			fwrite($upis, $podaciZaUpisati);
 			fclose($upis);
+		}
 			?>
 			
 			<div id="zaglavlje">
@@ -51,8 +53,8 @@
 			<form action="dodavanjeNovosti.php" class="dodavanje" method="post">
 				<div class="Dodaj">
 					<h1>Unesi novu vijest</h1>
-					<input type="text" id="nazivVijesti" name="nazivVijesti" value="" placeholder="Naziv vijesti" required />
-					<textarea cols="40" id="tekstVijesti" name="tekstVijesti" rows="5" placeholder="Tekst vijesti" required></textarea> 
+					<input type="text" id="nazivVijesti" name="nazivVijesti" value="" placeholder="Naziv vijesti" required="" />
+					<textarea cols="40" id="tekstVijesti" name="tekstVijesti" rows="5" placeholder="Tekst vijesti" required=""></textarea> 
 					<div id="wrapper">
 					<input type="text" id="drzava" name="drzava" value="" placeholder="Dvoslovni kod države" onkeyup="ValidirajDrzavu(this)" required />
 					<input type="text" id="broj" name="broj" value="" placeholder="Broj telefona" onkeyup="ValidirajBroj(this)" required />

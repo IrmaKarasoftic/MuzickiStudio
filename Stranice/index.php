@@ -14,6 +14,12 @@
 					<div id="linija"></div>
 				</div>
 			</div>
+			<?php
+			if (isset($_SESSION['login']))
+			{
+				echo "<form action='logout.php' method='POST'><input type='submit' id='logout' alt='logout' name='logout' value='Logout'></form>";
+			}
+			?>
 
 			<a class="skip-main" href="GlavniDioNovosti">Preskoči čitanje menija</a>
 			<div id="meni">
