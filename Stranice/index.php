@@ -7,6 +7,10 @@
 		<META charset=utf-8>
 		</HEAD>
 		<BODY>
+			<?php
+			session_start();
+			?>
+
 			<div id="zaglavlje">
 				<h1>Sound Art Studio</h1>
 				<div id="logo">
@@ -14,12 +18,6 @@
 					<div id="linija"></div>
 				</div>
 			</div>
-			<?php
-			if (isset($_SESSION['login']))
-			{
-				echo "<form action='logout.php' method='POST'><input type='submit' id='logout' alt='logout' name='logout' value='Logout'></form>";
-			}
-			?>
 
 			<a class="skip-main" href="GlavniDioNovosti">Preskoči čitanje menija</a>
 			<div id="meni">
@@ -46,7 +44,6 @@
 			<div class="GlavniDioNovosti" name="GlavniDioNovosti">
 
 				<?php
-				session_start();
 				function PoDatumu($novosti)
 				{
 					$datumi = array();
