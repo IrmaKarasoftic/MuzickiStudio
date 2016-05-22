@@ -7,6 +7,9 @@
 <META charset=utf-8>
 </HEAD>
 <body>
+<?php
+session_start();
+?>
   <div id="zaglavlje">
   	<h1>Sound Art Studio</h1>
   <div id="logo">

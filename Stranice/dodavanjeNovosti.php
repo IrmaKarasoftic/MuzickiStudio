@@ -9,6 +9,9 @@
 		<BODY>
 
 			<?php
+			session_start();
+			if(!isset($_SESSION['login']))
+				header("Location: login.php");
 			$naziv="";
 			$tekst="";
 			date_default_timezone_set("Europe/Sarajevo");

@@ -14,7 +14,7 @@
 					<div id="linija"></div>
 				</div>
 			</div>
-			
+
 			<a class="skip-main" href="GlavniDioNovosti">Preskoči čitanje menija</a>
 			<div id="meni">
 				<ul>
@@ -40,7 +40,7 @@
 			<div class="GlavniDioNovosti" name="GlavniDioNovosti">
 
 				<?php
-
+				session_start();
 				function PoDatumu($novosti)
 				{
 					$datumi = array();

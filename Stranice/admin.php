@@ -44,7 +44,7 @@
 
 			if (isset($_SESSION['login']))
 			{
-				echo "<input type='submit' id='logout' alt='logout' name='logout' value='Logout'>";
+				echo "<form action='logout.php' method='POST'><input type='submit' id='logout' alt='logout' name='logout' value='Logout'></form>";
 			}
 
 			?>

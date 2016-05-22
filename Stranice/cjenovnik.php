@@ -13,6 +13,9 @@
 	<div id="linija"></div>
 </div>
 </div>
+<?php
+session_start();
+?>
 <a class="skip-main" href="#tabela" alt="Preskoči čitanje menija">Preskoči čitanje menija</a>
 	<div id="meni">
 		<ul>
