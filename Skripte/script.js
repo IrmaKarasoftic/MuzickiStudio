@@ -158,7 +158,14 @@ function provjeriDaLiJePrijavljen()
     return false;
 }
 
-function preventXSS($output)
-{
-  return htmlspecialchars($output, ENT_QUOTES, 'UTF-8');
+function otkaceno(caller) {
+    if (caller.checked) {
+        var abecedno = "./index.php?sort=abecedno";
+        window.location = abecedno;
+    }
+    else 
+    {
+        var poVremenu = "./index.php?sort=poVremenu";
+        window.location = poVremenu;
+    }
 }

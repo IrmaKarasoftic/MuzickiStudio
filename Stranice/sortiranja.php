@@ -9,11 +9,7 @@ function sortiranjeAbecedno($prvi, $drugi)
 
 function sortiranjePoDatumu($prvi, $drugi)
 {
-	$prvi_pom = explode("%",$prvi);
-	$drugi_pom = explode("%",$drugi);
-	$datum1 = $prvi_pom[1];
-	$datum2 = $drugi_pom[1];
-	return strtotime($datum1) < strtotime($datum2);
+    return $orvi.text[0] > $drugi.text[0];
 }
 
 ?>

@@ -33,39 +33,62 @@
 				<option value="sedmicne" id="opcija2">Novosti ove sedmice</option>
 				<option value="mjesecne" id="opcija3">Novosti ovog mjeseca</option>
 			</select>
+
 			<div class="Abc">
-				<input type="checkbox" name="alphabetical" value="no" id="cb">Sortiraj abecedno<br>
+				<input type="checkbox" name="sortiraj" value="no" id="sortiraj" onchange="otkaceno(this)" >Sortiraj abecedno<br>
 			</div>
 			<div class="GlavniDioNovosti" name="GlavniDioNovosti">
 
 				<?php
-				include 'sortiranja.php';
 
-				$podaci=file('../novosti.csv');
-				/*
-				Ako treba po datumu
+				function PoDatumu($novosti)
+				{
+					$datumi = array();
+					foreach($novosti as $novost)
+					{
+						$datumi[] = new DateTime($novost[0]);
+					}
+					array_multisort($datumi, SORT_DESC, $novosti);
 
-				usort($podaci, "sortirajPoDatumu");
+					return $novosti;
+				}
 
-				Po abecedi
+				function PoAbecedi($novosti)
+				{
+					$slova = array();
+					foreach($novosti as $novost)
+					{
+						$slova[] = $novost[1];
+					}
+					array_multisort($slova, $novosti);
+					return $novosti;
+				}
 
-				usort($podaci, "sortirajAbecedno");
+				$podaci = array_map(function($v){return str_getcsv($v, "%");}, file("../novosti.csv"));
+
+				if(!isset($_GET['sort'])) {
+					$sortirano=PoDatumu($podaci);
+				}
+				elseif ($_GET['sort'] == 'abecedno') {
+					$sortirano = PoAbecedi($podaci);
+					$checked="checked";
+				}
+				else
+				{
+					$sortirano=PoDatumu($podaci);
+				}
 
 
-				*/
-
-				foreach($podaci as $novost) {
-					$podatak=explode('%',$novost);
+				foreach($sortirano as $novost) {
 
 					echo "<div class='Novost'>";
-					echo "<div class='vrijeme'>". $podatak[0] . "</div>";
-					echo "<p>". $podatak[1] . "</p>";
-					echo "<label class='pomvrijeme'>". $podatak[2]. "</label>";
+					echo "<div class='vrijeme'>". $novost[0] . "</div>";
+					echo "<p>". $novost[1] . "</p>";
+					echo "<label class='pomvrijeme'>". $novost[2]. "</label>";
 					echo "<img src='../Slike/sas.jpg'";
 					echo "</div>";
 					echo "</div>";
-
-					}
+				}
 				?>
 			</div>
 		</BODY>
