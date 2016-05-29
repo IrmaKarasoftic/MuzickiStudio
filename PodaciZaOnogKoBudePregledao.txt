@@ -1,3 +1,0 @@
-username: irma
-password: admin
-OpenShift: http://muzickistudio-ikarasofti1.rhcloud.com/Stranice/

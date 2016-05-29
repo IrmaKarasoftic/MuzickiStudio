@@ -22,9 +22,9 @@ session_start();
 		<li><a href="index.php">Naslovnica</a></li>
 		<li><a href="omeni.php">O meni</a></li>
 		<li><a href="#">Coveri</a></li>
-		<li><a href="Cjenovnik.php">Cjenovnik</a></li>
-		<li><a href="Kontakt.php">Kontakt</a></li>
-		<li><a href="Login.php">Login</a></li>
+		<li><a href="cjenovnik.php">Cjenovnik</a></li>
+		<li><a href="kontakt.php">Kontakt</a></li>
+		<li><a href="login.php">Login</a></li>
 		</ul>
 	</div>
 

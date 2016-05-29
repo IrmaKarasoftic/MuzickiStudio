@@ -159,6 +159,7 @@ function provjeriDaLiJePrijavljen()
 }
 
 function otkaceno(caller) {
+  
     if (caller.checked) {
         var abecedno = "./index.php?sort=abecedno";
         window.location = abecedno;
