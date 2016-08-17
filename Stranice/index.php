@@ -25,7 +25,6 @@
 					<li><a href="#">Naslovnica</a></li>
 					<li><a href="omeni.php">O meni</a></li>
 					<li><a href="coveri.php">Coveri</a></li>
-					<li><a href="cjenovnik.php">Cjenovnik</a></li>
 					<li><a href="kontakt.php">Kontakt</a></li>
 					<li><a href="login.php">Login</a></li>
 				</ul>
@@ -38,9 +37,7 @@
 				<option value="mjesecne" id="opcija3">Novosti ovog mjeseca</option>
 			</select>
 
-			<div class="Abc">
-				<input type="checkbox" name="sortiraj" value="no" id="sortiraj" onchange="otkaceno(this)" >Sortiraj abecedno<br>
-			</div>
+			s
 			<div class="GlavniDioNovosti" >
 
 				<?php

@@ -690,7 +690,7 @@ a.skip-main:focus, a.skip-main:active {
 	display: block;
 	background: #FF7052;
 	color: #fff;
-	font-size: 2vw;
+	font-size: 2.1vw;
 }
 
 .legend:after {
@@ -837,4 +837,13 @@ a.skip-main:focus, a.skip-main:active {
 	position: relative;
 	font-size: 1.1vw;
 	left: 2vw;
+}
+
+#podaci 
+{
+	position: relative;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.7vw;
 }

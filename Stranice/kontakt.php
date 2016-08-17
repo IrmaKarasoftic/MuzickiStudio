@@ -23,7 +23,6 @@ session_start();
   		<li><a href="index.php">Naslovnica</a></li>
   		<li><a href="omeni.php">O meni</a></li>
   		<li><a href="coveri.php">Coveri</a></li>
-  		<li><a href="cjenovnik.php">Cjenovnik</a></li>
   		<li><a href="#">Kontakt</a></li>
       <li><a href="login.php">Login</a></li>
   		</ul>
@@ -32,6 +31,7 @@ session_start();
     <ul class="drustvenemreze">
     <li><a class="fb" href="https://www.facebook.com/halid.hajdukovic?fref=ts" target="_blank">Facebook</a></li>
     <li><a class="yt" href="https://www.youtube.com/channel/UCXasrB2DKH0pSv3w4Fnua4g" target="_blank">Youtube</a></li>
+    <li><a class="fb" href="https://www.instagram.com/halidhajdukovic/" target="_blank">Instagram</a></li>
     </ul>
   </div>
 
@@ -39,24 +39,13 @@ session_start();
   <form class="FormaKontakt">
     <div class="legendaKontakt">Kontaktirajte nas!</div>
 
-    <label>Ime</label>
-    <input type="text" id="ime" name="ime" onkeyup="ValidirajIme(this)" required>
-
-    <label>Prezime</label>
-    <input type="text" id="prezime" name="prezime" onkeyup="ValidirajPrezime(this)" required>
-
-    <label>E-mail</label> <img src="../Slike/hint.png" alt="Unesite e-mail" title="Email mora biti u formatu primjer@primjer.primjer" id="email_hint"/>
-    <input type="email" id="mail" name="mail" onkeyup="ValidirajMail(this)" required>
-    <br>
-<!-- Ukoliko se unese broj telefona, ne mora se unijeti pitanje, korisnik ce biti pozvan-->
-    <label>Broj telefona</label> <img src="../Slike/hint.png" alt="Unesite broj telefona" title="Telefon mora biti u formatu 06x/xxx-xxx(x)" id="telefon_hint"/>
-    <input type="text" id="telefon" name="telefon" onkeyup="ValidirajTelefon(this)" required>
-
-    <label>Vaše pitanje:</label>
-    <textarea id="pitanje" name="pitanje" required></textarea>
+    <div id="podaci">
     <br><br>
-
-    <input type="submit" id="dugme" value="Pošalji upit" onclick="ProvjeriPolja(this)">
+    <label>Halid Hajduković</label><br><br>
+    <label>Email: halid307@gmail.com</label>
+   <br><br>
+    <label>Broj telefona: +387 61/908-118</label>
+    </div>
   </form>
 
 </div>

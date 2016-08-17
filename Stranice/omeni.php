@@ -22,7 +22,6 @@ session_start();
 		<li><a href="index.php">Naslovnica</a></li>
 		<li><a href="#">O meni</a></li>
 		<li><a href="coveri.php">Coveri</a></li>
-		<li><a href="cjenovnik.php">Cjenovnik</a></li>
 		<li><a href="kontakt.php">Kontakt</a></li>
 		<li><a href="login.php">Login</a></li>
 		</ul>

@@ -21,7 +21,6 @@
 					<li><a href="index.php">Naslovnica</a></li>
 					<li><a href="omeni.php">O meni</a></li>
 					<li><a href="coveri.php">Coveri</a></li>
-					<li><a href="cjenovnik.php">Cjenovnik</a></li>
 					<li><a href="kontakt.php">Kontakt</a></li>
 				</ul>
 			</div>
