@@ -1,3 +1,7 @@
+<?php
+			session_start();
+			
+			?>
 <!DOCTYPE HTML>
 <HTML>
 	<HEAD>
@@ -7,7 +11,12 @@
 		</HEAD>
 		<BODY>
 			<?php
-			session_start();
+			
+			if(isset($_SESSION['login'])){
+				header("Location: admin.php");
+				
+			}
+			else{
 			$poruka = '';
 			$uredu = false;
 
@@ -16,7 +25,7 @@
 				$usernameT = htmlspecialchars($_POST['username']);
 				$passwordT = htmlspecialchars($_POST['password']);
 				
-				$podaci=file('../loginPodaci.csv');
+				$podaci=file('../046f910477551dc9d18a34b8e4f83107/loginPodaci.csv');
 
 				foreach($podaci as $korisnik) {
 					$podatak=explode(',',$korisnik);
@@ -36,6 +45,7 @@
 			if($uredu) {
 				header("Location: admin.php");
 			}
+		}
 			?>  
 			
 			<div id="zaglavlje">
@@ -49,7 +59,7 @@
 			<a class="skip-main" href="GlavniDioNovosti">Preskoči čitanje menija</a>
 			<div id="meni">
 				<ul>
-					<li><a href="index.php">Naslovnica</a></li>
+					<li><a href="../index.php">Naslovnica</a></li>
 					<li><a href="omeni.php">O meni</a></li>
 					<li><a href="coveri.php">Coveri</a></li>
 					<li><a href="kontakt.php">Kontakt</a></li>

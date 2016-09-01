@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+if(isset($_SESSION['login'])){
+	$_SESSION['halid'] = 'zvjerka';
+}
+?>
 <!DOCTYPE HTML>
 <HTML>
 <HEAD>
@@ -6,9 +13,7 @@
 <META charset=utf-8>
 </HEAD>
 <BODY>
-<?php
-session_start();
-?>
+
 <div id="zaglavlje">
 	<h1>Sound Art Studio</h1>
 <div id="logo">
@@ -19,11 +24,16 @@ session_start();
 <a class="skip-main" href="omeni" >Preskoči čitanje menija</a>
 	<div id="meni">
 		<ul>
-		<li><a href="index.php">Naslovnica</a></li>
+		<li><a href="../index.php">Naslovnica</a></li>
 		<li><a href="#">O meni</a></li>
 		<li><a href="coveri.php">Coveri</a></li>
 		<li><a href="kontakt.php">Kontakt</a></li>
-		<li><a href="login.php">Login</a></li>
+		<?php
+		if(isset($_SESSION['login'])){
+			print "<li><a href='admin.php'>Logout</a></li>";
+		}
+		else print "<li><a href='login.php'>Login</a></li>";
+		?>
 		</ul>
 	</div>
 	<div class="omeni"><p>
@@ -39,7 +49,7 @@ session_start();
 
 	Priču mog života (koju je snimila BHT1) možete poslušati <a href="https://www.youtube.com/watch?v=hAbPWu4DT90" target="_blank">ovdje.</a>
 	</p>
-	<img src="../Slike/halidslika.jpg" alt="Halid Hajduković">
+	<img src="../slike/halidslika.jpg" alt="Halid Hajduković">
 
 	</div>
 	</BODY>

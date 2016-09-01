@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+if(isset($_SESSION['login'])){
+	$_SESSION['halid'] = 'zvjerka';
+}
+?>
 <!DOCTYPE HTML>
 <HTML>
 <HEAD>
@@ -13,18 +20,21 @@
 	<div id="linija"></div>
 </div>
 </div>
-<?php
-session_start();
-?>
+
 <a class="skip-main" href="#tabela" >Preskoči čitanje menija</a>
 	<div id="meni">
 		<ul>
-		<li><a href="index.php">Naslovnica</a></li>
+		<li><a href="../index.php">Naslovnica</a></li>
 		<li><a href="omeni.php">O meni</a></li>
 		<li><a href="coveri.php">Coveri</a></li>
 		<li><a href="#.php">Cjenovnik</a></li>
 		<li><a href="kontakt.php">Kontakt</a></li>
-		<li><a href="login.php">Login</a></li>
+		<?php
+		if(isset($_SESSION['login'])){
+			print "<li><a href='admin.php'>Logout</a></li>";
+		}
+		else print "<li><a href='login.php'>Login</a></li>";
+		?>
 		</ul>
 	</div>
 

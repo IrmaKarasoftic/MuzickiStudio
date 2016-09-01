@@ -1,16 +1,21 @@
+<?php
+session_start();
+
+if(isset($_SESSION['login'])){
+	$_SESSION['halid'] = 'zvjerka';
+}
+?>
+
 <!DOCTYPE HTML>
 <HTML>
 	<HEAD>
 		<TITLE>Sound Art Studio</TITLE>
-		<link rel="stylesheet" type="text/css" href="../stil.css">
-		<script src="../Skripte/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="stil.css">
+		<script src="skripte/script.js"></script>
 		<META charset=utf-8>
 		</HEAD>
 		<BODY>
-			<?php
-			session_start();
-			?>
-
+			
 			<div id="zaglavlje">
 				<h1>Sound Art Studio</h1>
 				<div id="logo">
@@ -23,10 +28,15 @@
 			<div id="meni">
 				<ul>
 					<li><a href="#">Naslovnica</a></li>
-					<li><a href="omeni.php">O meni</a></li>
-					<li><a href="coveri.php">Coveri</a></li>
-					<li><a href="kontakt.php">Kontakt</a></li>
-					<li><a href="login.php">Login</a></li>
+					<li><a href="stranice/omeni.php">O meni</a></li>
+					<li><a href="stranice/coveri.php">Coveri</a></li>
+					<li><a href="stranice/kontakt.php">Kontakt</a></li>
+					<?php
+		if(isset($_SESSION['login'])){
+			print "<li><a href='stranice/admin.php'>Logout</a></li>";
+		}
+		else print "<li><a href='stranice/login.php'>Login</a></li>";
+		?>
 				</ul>
 			</div>
 
@@ -64,7 +74,7 @@
 					return $novosti;
 				}
 
-				$podaci = array_map(function($v){return str_getcsv($v, "%");}, file("../novosti.csv"));
+				$podaci = array_map(function($v){return str_getcsv($v, "%");}, file("novosti.csv"));
 
 				if(!isset($_GET['sort'])) {
 					$sortirano=PoDatumu($podaci);
@@ -85,7 +95,7 @@
 					echo "<div class='vrijeme'>". $novost[0] . "</div>";
 					echo "<p>". $novost[1] . "</p>";
 					echo "<label class='pomvrijeme'>". $novost[2]. "</label>";
-					echo "<img src='../Slike/sas.jpg'";
+					echo "<img src='slike/sas.jpg'";
 					echo "</div>";
 					echo "</div>";
 				}

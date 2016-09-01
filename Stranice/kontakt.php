@@ -1,15 +1,20 @@
+<?php
+session_start();
+
+if(isset($_SESSION['login'])){
+	$_SESSION['halid'] = 'zvjerka';
+}
+?>
 <!DOCTYPE html>
 <html>
 <HEAD>
 <TITLE>Kontakt</TITLE>
 <link rel="stylesheet" type="text/css" href="../stil.css">
-<script src="../Skripte/validacijaForme.js"></script>
+<script src="../skripte/validacijaForme.js"></script>
 <META charset=utf-8>
 </HEAD>
 <body>
-<?php
-session_start();
-?>
+
   <div id="zaglavlje">
   	<h1>Sound Art Studio</h1>
   <div id="logo">
@@ -20,11 +25,16 @@ session_start();
   <a class="skip-main" href="kontakt">Preskoči čitanje menija</a>
   	<div id="meni">
   		<ul>
-  		<li><a href="index.php">Naslovnica</a></li>
+  		<li><a href="../index.php">Naslovnica</a></li>
   		<li><a href="omeni.php">O meni</a></li>
   		<li><a href="coveri.php">Coveri</a></li>
   		<li><a href="#">Kontakt</a></li>
-      <li><a href="login.php">Login</a></li>
+      <?php
+		if(isset($_SESSION['login'])){
+			print "<li><a href='admin.php'>Logout</a></li>";
+		}
+		else print "<li><a href='login.php'>Login</a></li>";
+		?>
   		</ul>
   	</div>
     <div class="kontaktiraj">
