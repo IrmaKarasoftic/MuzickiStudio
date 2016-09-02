@@ -9,7 +9,10 @@ body {
 /*meni*/
 /*meni*/
 #zaglavlje {
-	background-color:black;
+	/*background-color:black;*/
+	background-image: url("slike/soundwaves1.jpg");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
 	height:10vw;
 	color:green;
 	font-family:Gabriela;
@@ -477,7 +480,7 @@ textarea {
 
 
 .drustvenemreze li:hover {
-	list-style-image: url("../Slike/strelica.png") ;
+	list-style-image: url("../slike/strelica.png") ;
 }
 
 a.fb:hover, a.yt:hover {
