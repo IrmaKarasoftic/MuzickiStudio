@@ -30,6 +30,7 @@ if(isset($_SESSION['login'])){
 					<li><a href="#">Naslovnica</a></li>
 					<li><a href="stranice/omeni.php">O meni</a></li>
 					<li><a href="stranice/coveri.php">Coveri</a></li>
+					<li><a href="galerija/slides.html">Galerija</a></li>
 					<li><a href="stranice/kontakt.php">Kontakt</a></li>
 					<?php
 		if(isset($_SESSION['login'])){
