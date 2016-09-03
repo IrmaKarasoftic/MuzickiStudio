@@ -62,7 +62,7 @@ if(isset($_SESSION['login'])){
 	</head>
 
 <body>
-
+<div id="galerija">
 <script type="text/javascript">
 			
 			jQuery(function($){
@@ -131,6 +131,7 @@ if(isset($_SESSION['login'])){
 			<ul id="slide-list"></ul>
 			
 		</div>
+	</div>
 	</div>
 
 </body>
