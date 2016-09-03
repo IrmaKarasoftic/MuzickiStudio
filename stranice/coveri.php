@@ -27,7 +27,7 @@ if(isset($_SESSION['login'])){
 		<li><a href="../index.php">Naslovnica</a></li>
 		<li><a href="omeni.php">O meni</a></li>
 		<li><a href="#">Coveri</a></li>
-		<li><a href="galerija/slides.html">Galerija</a></li>
+		<li><a href="../galerija/slides.html">Galerija</a></li>
 		<li><a href="kontakt.php">Kontakt</a></li>
 		<?php
 		if(isset($_SESSION['login'])){

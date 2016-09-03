@@ -1,3 +1,11 @@
+<?php 
+session_start();
+
+if(isset($_SESSION['login'])){
+	$_SESSION['halid'] = 'zvjerka';
+}
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -43,7 +51,7 @@
 			<a class="skip-main" href="GlavniDioNovosti">Preskoči čitanje menija</a>
 			<div id="meni">
 				<ul>
-					<li><a href="#">Naslovnica</a></li>
+					<li><a href="../index.php">Naslovnica</a></li>
 					<li><a href="../stranice/omeni.php">O meni</a></li>
 					<li><a href="../stranice/coveri.php">Coveri</a></li>
 					<li><a href="#">Galerija</a></li>
